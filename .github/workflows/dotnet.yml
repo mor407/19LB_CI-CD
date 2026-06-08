@@ -18,4 +18,4 @@ jobs:
     - name: Build
       run: dotnet build MyCalcApp.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test MyCalcApp.Tests.csproj --configuration Release --no-build
+      run: dotnet test MyCalcApp.Tests.csproj --configuration Release --no-build --verbosity detailed
