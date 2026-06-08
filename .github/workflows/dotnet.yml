@@ -14,8 +14,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore
-      run: dotnet restore
+      run: dotnet restore MyCalcApp.sln
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build MyCalcApp.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test --configuration Release --no-build
+      run: dotnet test MyCalcApp.Tests.csproj --configuration Release --no-build
